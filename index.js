@@ -110,19 +110,22 @@ module.exports = (gulp, config) => {
         open: config.browserSync.openBrowserAtStart,
         proxy: config.browserSync.domain,
         startPath: config.browserSync.startPath,
+        port: 8081,
+        ui: {
+          port: 8082
+        }
       });
     } else {
       browserSync.init({
         injectChanges: true,
         server: {
-          baseDir: config.browserSync.baseDir,
+          baseDir: config.browserSync.baseDir
         },
         startPath: config.browserSync.startPath,
         notify: config.browserSync.notify,
         ui: config.browserSync.ui,
         open: config.browserSync.openBrowserAtStart,
-        reloadOnRestart: config.browserSync.reloadOnRestart,
-        port: openPort,
+        reloadOnRestart: config.browserSync.reloadOnRestart
       });
     }
     gulp.watch(config.paths.js, ['scripts', 'styleguide-scripts']).on('change', browserSync.reload);
