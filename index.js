@@ -96,7 +96,7 @@ module.exports = (gulp, config) => {
 
   // Find open port using portscanner.
   let openPort = '';
-  portscanner.findAPortNotInUse(3000, 3010, '127.0.0.1', (error, port) => {
+  portscanner.findAPortNotInUse(8081, 8082, '127.0.0.1', (error, port) => {
     openPort = port;
   });
 
