@@ -80,9 +80,9 @@
     browserSync: {
       enabled: true,
       baseDir: './',
-      startPath: 'pattern-lab/public/',
+      startPath: '/themes/custom/emulsify/pattern-lab/public/',
       // Uncomment below if using a specific local url
-      // domain: 'emulsify.dev',
+      domain: 'lakunulk-affiliatelk.c9users.io',
       notify: false,
       openBrowserAtStart: false,
       reloadOnRestart: true,
