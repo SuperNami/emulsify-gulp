@@ -1,2 +1,2 @@
 pull-upstream:
-	git pull upstream -b develop
+	git pull upstream develop
